@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description or site.description }}">
+  <title>{{ title }} | {{ site.title }}</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/css/variables.css' | baseUrl }}">
+  <link rel="stylesheet" href="{{ '/css/reset.css' | baseUrl }}">
+  <link rel="stylesheet" href="{{ '/css/base.css' | baseUrl }}">
+  <link rel="stylesheet" href="{{ '/css/layout.css' | baseUrl }}">
+  <link rel="stylesheet" href="{{ '/css/components.css' | baseUrl }}">
+  <link rel="stylesheet" href="{{ '/css/icons.css' | baseUrl }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | baseUrl }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <div class="container">
+        <a href="{{ '/' | baseUrl }}" class="logo">{{ site.designStyle }}</a>
+        <ul class="nav-menu">
+          <li><a href="{{ '/' | baseUrl }}">
+            <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 20L24 6L40 20V40C40 41.1046 39.1046 42 38 42H10C8.89543 42 8 41.1046 8 40V20Z"/>
+              <path d="M18 42V26H30V42"/>
+            </svg>
+            Home
+          </a></li>
+          <li><a href="{{ '/history/' | baseUrl }}">
+            <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16"/>
+              <path d="M24 12V24L32 28"/>
+            </svg>
+            History
+          </a></li>
+          <li><a href="{{ '/principles/' | baseUrl }}">
+            <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="32"/>
+              <line x1="24" y1="8" x2="24" y2="40"/>
+              <line x1="8" y1="24" x2="40" y2="24"/>
+            </svg>
+            Principles
+          </a></li>
+          <li><a href="{{ '/examples/' | baseUrl }}">
+            <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="32" rx="2"/>
+              <circle cx="17" cy="17" r="3"/>
+              <path d="M40 32L32 24L20 36"/>
+            </svg>
+            Examples
+          </a></li>
+          <li><a href="{{ '/about/' | baseUrl }}">
+            <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16"/>
+              <path d="M24 28V24"/>
+              <circle cx="24" cy="18" r="1.5" fill="currentColor"/>
+            </svg>
+            About
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>{{ site.designStyle }}</h3>
+          <p>{{ site.description }}</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="{{ '/history/' | baseUrl }}">History</a></li>
+            <li><a href="{{ '/principles/' | baseUrl }}">Principles</a></li>
+            <li><a href="{{ '/examples/' | baseUrl }}">Examples</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p>
+            <a href="{{ site.github }}" target="_blank" rel="noopener">
+              <svg class="icon icon-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C15.163 8 8 15.163 8 24C8 31.115 12.627 37.145 19.069 39.385C19.87 39.53 20.171 39.027 20.171 38.591C20.171 38.204 20.157 37.154 20.15 35.748C15.782 36.711 14.843 33.682 14.843 33.682C14.115 31.717 13.051 31.216 13.051 31.216C11.557 30.235 13.164 30.256 13.164 30.256C14.816 30.373 15.659 32.005 15.659 32.005C17.124 34.576 19.533 33.847 20.204 33.528C20.353 32.477 20.772 31.749 21.237 31.437C17.715 31.12 13.996 29.737 13.996 23.414C13.996 21.542 14.614 20.016 15.692 18.819C15.525 18.503 14.969 16.865 15.852 14.588C15.852 14.588 17.227 14.145 20.132 16.096C21.447 15.724 22.869 15.538 24.282 15.531C25.695 15.538 27.117 15.724 28.434 16.096C31.337 14.145 32.71 14.588 32.71 14.588C33.595 16.865 33.039 18.503 32.872 18.819C33.952 20.016 34.566 21.542 34.566 23.414C34.566 29.752 30.841 31.116 27.308 31.428C27.884 31.931 28.412 32.924 28.412 34.437C28.412 36.625 28.393 38.393 28.393 38.591C28.393 39.03 28.689 39.537 29.501 39.383C35.938 37.14 40.56 31.113 40.56 24C40.56 15.163 33.397 8 24.56 8"/>
+              </svg>
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 {{ site.author }}. Built for IS 117.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/js/main.js' | baseUrl }}"></script>
+</body>
+</html>

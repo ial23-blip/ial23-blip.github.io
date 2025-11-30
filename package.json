@@ -1,0 +1,22 @@
+{
+  "name": "swiss-design-gallery",
+  "version": "1.0.0",
+  "description": "A design gallery showcasing Swiss Design principles and history",
+  "scripts": {
+    "dev": "eleventy --serve --port=8080",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "swiss-design",
+    "design-history",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "ial23-blip",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {}
+}

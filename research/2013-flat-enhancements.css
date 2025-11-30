@@ -1,0 +1,128 @@
+/* 2013 FLAT DESIGN ENHANCEMENT - Peak Flat Era */
+
+/* 1. MORE COLORFUL SECTIONS (Windows Phone vibes) */
+/* Currently you have colored sections, but you could alternate more aggressively */
+
+/* Example: Make EVERY section a bold color */
+.section:nth-of-type(1) { background: var(--color-primary); color: var(--color-white); }
+.section:nth-of-type(2) { background: var(--color-success); color: var(--color-white); }
+.section:nth-of-type(3) { background: var(--color-warning); color: var(--color-white); }
+.section:nth-of-type(4) { background: var(--color-danger); color: var(--color-white); }
+.section:nth-of-type(5) { background: var(--color-info); color: var(--color-white); }
+
+/* 2. BOLDER BUTTONS (iOS 7 had VERY simple buttons) */
+.btn {
+  border-radius: 6px; /* iOS 7 used slightly more rounding */
+  text-transform: uppercase; /* iOS 7 loved uppercase buttons */
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-bold); /* Even bolder */
+}
+
+/* 3. BIGGER, BOLDER TYPE (Flat Design went BIG) */
+.hero-title {
+  font-size: 4rem; /* Go even bigger */
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.02em; /* Tight tracking for impact */
+}
+
+/* 4. EDGE-TO-EDGE COLOR (Metro style) */
+.section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section .container {
+  max-width: 100%; /* Full width color blocks */
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+/* 5. REMOVE ALL NEUTRAL BACKGROUNDS (Peak 2013 was ALL COLOR) */
+body {
+  background-color: var(--color-white); /* Pure white, not gray */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent */
+}
+
+/* 6. MORE SATURATED HOVER STATES */
+.btn-primary:hover {
+  background-color: #2574A9; /* Even darker blue */
+  transform: scale(1.02); /* Subtle grow (still flat, just scale) */
+}
+
+/* 7. WINDOWS PHONE TILE EFFECT */
+.grid-3 {
+  gap: 2px; /* Tight gaps like Metro tiles */
+}
+
+.card {
+  border-radius: 0; /* Metro had ZERO rounding */
+  padding: var(--space-2xl); /* More spacious */
+}
+
+/* 8. IOS 7 BLUR EFFECT (Optional - still flat!) */
+.site-header {
+  background-color: rgba(52, 152, 219, 0.95); /* Slightly transparent */
+  backdrop-filter: blur(10px); /* iOS 7 loved blur */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 9. LONG SHADOW (2013-2014 TREND) */
+/* This was controversial but VERY 2013 */
+.hero-title {
+  text-shadow: 
+    1px 1px 0 rgba(0,0,0,0.1),
+    2px 2px 0 rgba(0,0,0,0.08),
+    3px 3px 0 rgba(0,0,0,0.06),
+    4px 4px 0 rgba(0,0,0,0.04),
+    5px 5px 0 rgba(0,0,0,0.02);
+  /* NOTE: This is technically a shadow, but "long shadow" was part of
+     the Flat Design trend in 2013-2014. It's debated! */
+}
+
+/* 10. COLOR OVERLAYS (2013 photo treatment) */
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery-item:hover::after {
+  opacity: 0.8; /* Flat color overlay on hover */
+}
+
+/* 11. SIMPLIFIED FOOTER (Less structure) */
+.site-footer {
+  background-color: var(--color-midnight-blue);
+  text-align: center; /* Center everything */
+  padding: var(--space-2xl);
+}
+
+.footer-content {
+  display: block; /* No grid, just stack */
+}
+
+/* 12. REMOVE SUBTLE DETAILS */
+/* In peak Flat (2013), we removed ALL subtle effects */
+.card,
+.btn,
+.principle-card {
+  transition: none; /* NO transitions - instant changes */
+}
+
+/* Flat 2013 was INSTANT, not smooth */
+.card:hover {
+  background-color: var(--color-clouds);
+  /* Instant change, no transition */
+}

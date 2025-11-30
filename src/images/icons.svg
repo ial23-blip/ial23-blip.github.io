@@ -1,0 +1,113 @@
+<!-- Flat Design Icons - 2px Stroke Outline Style -->
+
+<!-- Home Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 20L24 6L40 20V40C40 41.1046 39.1046 42 38 42H10C8.89543 42 8 41.1046 8 40V20Z" stroke-width="2" fill="none"/>
+  <path d="M18 42V26H30V42" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- History/Time Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="16" stroke-width="2" fill="none"/>
+  <path d="M24 12V24L32 28" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Principles/Grid Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="8" width="32" height="32" stroke-width="2" fill="none"/>
+  <line x1="24" y1="8" x2="24" y2="40" stroke-width="2"/>
+  <line x1="8" y1="24" x2="40" y2="24" stroke-width="2"/>
+</svg>
+
+<!-- Examples/Image Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="8" width="32" height="32" rx="2" stroke-width="2" fill="none"/>
+  <circle cx="17" cy="17" r="3" stroke-width="2" fill="none"/>
+  <path d="M40 32L32 24L20 36" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- About/Info Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="16" stroke-width="2" fill="none"/>
+  <path d="M24 28V24" stroke-width="2" fill="none"/>
+  <circle cx="24" cy="18" r="1" fill="currentColor"/>
+</svg>
+
+<!-- Arrow Right Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 24H36M36 24L28 16M36 24L28 32" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- External Link Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M32 14H38V20M38 14L24 28M38 28V38H10V10H20" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- GitHub Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M24 8C15.163 8 8 15.163 8 24C8 31.115 12.627 37.145 19.069 39.385C19.87 39.53 20.171 39.027 20.171 38.591C20.171 38.204 20.157 37.154 20.15 35.748C15.782 36.711 14.843 33.682 14.843 33.682C14.115 31.717 13.051 31.216 13.051 31.216C11.557 30.235 13.164 30.256 13.164 30.256C14.816 30.373 15.659 32.005 15.659 32.005C17.124 34.576 19.533 33.847 20.204 33.528C20.353 32.477 20.772 31.749 21.237 31.437C17.715 31.12 13.996 29.737 13.996 23.414C13.996 21.542 14.614 20.016 15.692 18.819C15.525 18.503 14.969 16.865 15.852 14.588C15.852 14.588 17.227 14.145 20.132 16.096C21.447 15.724 22.869 15.538 24.282 15.531C25.695 15.538 27.117 15.724 28.434 16.096C31.337 14.145 32.71 14.588 32.71 14.588C33.595 16.865 33.039 18.503 32.872 18.819C33.952 20.016 34.566 21.542 34.566 23.414C34.566 29.752 30.841 31.116 27.308 31.428C27.884 31.931 28.412 32.924 28.412 34.437C28.412 36.625 28.393 38.393 28.393 38.591C28.393 39.03 28.689 39.537 29.501 39.383C35.938 37.14 40.56 31.113 40.56 24C40.56 15.163 33.397 8 24.56 8" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Layers/Stack Icon (No Depth) -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="12" width="24" height="24" stroke-width="2" fill="none"/>
+  <path d="M18 12V6H42V30H36" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Palette Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="16" stroke-width="2" fill="none"/>
+  <circle cx="18" cy="18" r="2" fill="currentColor"/>
+  <circle cx="30" cy="18" r="2" fill="currentColor"/>
+  <circle cx="18" cy="30" r="2" fill="currentColor"/>
+  <circle cx="30" cy="30" r="2" fill="currentColor"/>
+</svg>
+
+<!-- Typography/Font Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 12H36M24 12V40M18 40H30" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Check/Success Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 24L20 32L36 16" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Menu/Hamburger Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <line x1="8" y1="16" x2="40" y2="16" stroke-width="2"/>
+  <line x1="8" y1="24" x2="40" y2="24" stroke-width="2"/>
+  <line x1="8" y1="32" x2="40" y2="32" stroke-width="2"/>
+</svg>
+
+<!-- Download Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M24 10V32M24 32L16 24M24 32L32 24M10 38H38" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Star Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M24 8L28.4 20.8H42L31.6 28.4L36 41.2L24 33.6L12 41.2L16.4 28.4L6 20.8H19.6L24 8Z" stroke-width="2" fill="none"/>
+</svg>
+
+<!-- Book/Documentation Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 8H34C35.1046 8 36 8.89543 36 10V38C36 39.1046 35.1046 40 34 40H14C12.8954 40 12 39.1046 12 38V10C12 8.89543 12.8954 8 14 8Z" stroke-width="2" fill="none"/>
+  <line x1="18" y1="16" x2="30" y2="16" stroke-width="2"/>
+  <line x1="18" y1="22" x2="30" y2="22" stroke-width="2"/>
+  <line x1="18" y1="28" x2="24" y2="28" stroke-width="2"/>
+</svg>
+
+<!-- Calendar Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="12" width="32" height="28" rx="2" stroke-width="2" fill="none"/>
+  <line x1="16" y1="8" x2="16" y2="16" stroke-width="2"/>
+  <line x1="32" y1="8" x2="32" y2="16" stroke-width="2"/>
+  <line x1="8" y1="20" x2="40" y2="20" stroke-width="2"/>
+</svg>
+
+<!-- Settings/Gear Icon -->
+<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="6" stroke-width="2" fill="none"/>
+  <path d="M24 12V8M24 40V36M36 24H40M8 24H12M33.66 14.34L36.48 11.52M11.52 36.48L14.34 33.66M33.66 33.66L36.48 36.48M11.52 11.52L14.34 14.34" stroke-width="2" fill="none"/>
+</svg>

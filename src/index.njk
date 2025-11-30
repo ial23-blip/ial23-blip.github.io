@@ -1,0 +1,154 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="hero" style="background-color: var(--color-info); color: var(--color-white);">
+  <div class="container">
+    <h1 class="hero-title" style="color: var(--color-white);">Flat Design: Clean, Colorful, Two-Dimensional</h1>
+    <p class="hero-subtitle" style="color: var(--color-white);">
+      Exploring the bold design movement that rejected skeuomorphism and depth effects for a completely flat, vibrant aesthetic in the early 2010s.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="background-color: var(--color-primary);">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card">
+        <svg class="icon icon-lg icon-primary" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="12" width="24" height="24"/>
+          <path d="M18 12V6H42V30H36"/>
+        </svg>
+        <h3 class="card-title" style="color: var(--color-primary);">No Depth Effects</h3>
+        <p class="card-content">
+          Completely flat visual style with no shadows, gradients, or 3D effects. Pure two-dimensional design.
+        </p>
+      </div>
+      <div class="card">
+        <svg class="icon icon-lg icon-success" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="16"/>
+          <circle cx="18" cy="18" r="2" fill="currentColor"/>
+          <circle cx="30" cy="18" r="2" fill="currentColor"/>
+          <circle cx="18" cy="30" r="2" fill="currentColor"/>
+          <circle cx="30" cy="30" r="2" fill="currentColor"/>
+        </svg>
+        <h3 class="card-title" style="color: var(--color-success);">Vibrant Colors</h3>
+        <p class="card-content">
+          Bright, bold color palettes that create visual impact through hue rather than depth.
+        </p>
+      </div>
+      <div class="card">
+        <svg class="icon icon-lg icon-warning" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 12H36M24 12V40M18 40H30"/>
+        </svg>
+        <h3 class="card-title" style="color: var(--color-warning);">Simple Typography</h3>
+        <p class="card-content">
+          Clean sans-serif fonts with bold weights for clarity and modern aesthetic.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: var(--color-warning); color: var(--color-white);">
+  <div class="container">
+    <h2 class="section-title" style="color: var(--color-white);">Origins & Evolution</h2>r-white);">Origins & Evolution</h2>
+    <div class="grid-2">
+      <div>
+        <p style="color: var(--color-white);">
+          Flat Design emerged in the early 2010s as a reaction against skeuomorphic design that dominated 
+          interfaces in the 2000s. Microsoft's Metro design language and Apple's iOS 7 popularized this 
+          completely flat, colorful aesthetic.
+        </p>
+        <p style="color: var(--color-white);">
+          The movement emphasized simplicity, clarity, and bold colors over realistic textures and 
+          depth effects. It was perfectly suited for responsive design and diverse screen sizes.
+        </p>
+        <a href="{{ '/history/' | baseUrl }}" class="btn" style="background-color: var(--color-white); color: var(--color-warning);">
+          <svg class="icon" style="stroke: var(--color-warning);" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="16"/>
+            <path d="M24 12V24L32 28"/>
+          </svg>
+          Explore the History
+        </a>
+      </div>
+      <div>
+        <div class="quote">
+          "Flat design is about clarity, simplicity, and honesty of materials. Digital is digital, not a simulation of the physical world."
+          <div class="quote-author">— Flat Design Philosophy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: var(--color-danger); color: var(--color-white);">
+  <div class="container">
+    <h2 class="section-title text-center mb-lg" style="color: var(--color-white);">Core Principles</h2>
+    <div class="grid-2">
+      {% for principle in site.keyPrinciples %}
+      <div class="principle-card" style="background-color: rgba(255, 255, 255, 0.95);">
+        <div class="principle-number" style="color: {% if loop.index == 1 %}var(--color-primary){% elif loop.index == 2 %}var(--color-success){% elif loop.index == 3 %}var(--color-warning){% elif loop.index == 4 %}var(--color-danger){% else %}var(--color-info){% endif %};">{{ loop.index }}</div>
+        <h3 class="principle-title">{{ principle }}</h3>
+        <p class="principle-description">
+          {% if loop.index == 1 %}
+          Removing all shadows, gradients, and 3D effects for a pure two-dimensional aesthetic.
+          {% elif loop.index == 2 %}
+          Bold, saturated colors that create visual interest without depth cues.
+          {% elif loop.index == 3 %}
+          Sans-serif fonts with clear hierarchy and bold weights for modern interfaces.
+          {% elif loop.index == 4 %}
+          Stripping interfaces to essential elements with simple geometric shapes.
+          {% elif loop.index == 5 %}
+          Honest digital materials that don't mimic physical textures or effects.
+          {% endif %}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-lg">
+      <a href="{{ '/principles/' | baseUrl }}" class="btn" style="background-color: var(--color-white); color: var(--color-danger);">
+        <svg class="icon" style="stroke: var(--color-danger);" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="32" height="32"/>
+          <line x1="24" y1="8" x2="24" y2="40"/>
+          <line x1="8" y1="24" x2="40" y2="24"/>
+        </svg>
+        Learn More About Principles
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: var(--color-success); color: var(--color-white);">
+  <div class="container">
+    <h2 class="section-title" style="color: var(--color-white);">Why Flat Design Matters</h2>
+    <div class="grid-2">
+      <div>
+        <h3 class="mb-sm" style="color: var(--color-white);">Responsive Era</h3>
+        <p>
+          Flat Design emerged perfectly timed for the responsive web era. Its scalable, 
+          simple elements work seamlessly across devices from phones to desktops without 
+          losing visual impact.
+        </p>
+      </div>
+      <div>
+        <h3 class="mb-sm" style="color: var(--color-white);">Digital Honesty</h3>
+        <p>
+          By rejecting skeuomorphism, Flat Design embraced the digital medium. Interfaces 
+          became faster, cleaner, and more focused on content and functionality.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-lg">
+      <a href="{{ '/examples/' | baseUrl }}" class="btn" style="background-color: var(--color-white); color: var(--color-success);">
+        <svg class="icon icon-success" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="32" height="32" rx="2"/>
+          <circle cx="17" cy="17" r="3"/>
+          <path d="M40 32L32 24L20 36"/>
+        </svg>
+        View Examples
+      </a>
+    </div>
+  </div>
+</section>

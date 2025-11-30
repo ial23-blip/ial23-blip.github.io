@@ -1,0 +1,16 @@
+{
+  "title": "Flat Design Gallery",
+  "description": "Exploring the principles, history, and influence of Flat Design - the colorful, two-dimensional design movement of the 2010s",
+  "author": "ial23-blip",
+  "url": "https://ial23-blip.github.io",
+  "github": "https://github.com/ial23-blip/ial23-blip.github.io",
+  "designStyle": "Flat Design",
+  "designPeriod": "2010s-Present",
+  "keyPrinciples": [
+    "Completely flat visual style",
+    "Bright vibrant colors",
+    "Simple clean typography",
+    "Minimal interface elements",
+    "No shadows or gradients"
+  ]
+}
