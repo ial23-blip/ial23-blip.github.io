@@ -1,0 +1,17 @@
+{
+  "name": "Flat Design Gallery",
+  "short_name": "Flat Design",
+  "description": "Exploring the principles, history, and influence of Flat Design - the colorful, two-dimensional design movement of the 2010s",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3498DB",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
