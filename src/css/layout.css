@@ -47,6 +47,11 @@
   background-color: var(--color-belize-hole);
 }
 
+.nav-menu a:focus {
+  outline: 3px solid var(--color-white);
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   .site-nav .container {
     flex-direction: column;

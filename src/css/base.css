@@ -1,4 +1,25 @@
 /* Flat Design Base Styles */
+
+/* Skip Link for Keyboard Navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  font-weight: var(--font-weight-bold);
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 body {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-normal);
@@ -60,6 +81,11 @@ a {
 
 a:hover {
   color: var(--color-belize-hole);
+}
+
+a:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 strong, b {

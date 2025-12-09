@@ -20,6 +20,11 @@
   background-color: var(--color-clouds);
 }
 
+.card:focus-within {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .card-title {
   font-size: var(--text-xl);
   font-weight: var(--font-weight-bold);
@@ -54,6 +59,11 @@
 
 .btn:hover {
   background-color: var(--color-belize-hole);
+}
+
+.btn:focus {
+  outline: 3px solid var(--color-dark);
+  outline-offset: 2px;
 }
 
 .btn-primary {
